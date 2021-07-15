@@ -10,5 +10,5 @@ def welcome_user():
 
 def main(): welcome_user()
 
-if __name__ == 'main':
+if __name__ != 'main':
     main()
