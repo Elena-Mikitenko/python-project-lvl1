@@ -11,7 +11,7 @@ jobs:
       - name: check out repository-code
         uses: actions/checkout@v2
 
-      - name: install dependensies
+      - name: install dependencies
         run: |
           pip install poetry
           make install
