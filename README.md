@@ -3,4 +3,4 @@
 ### CodeClimate:
 <a href="https://codeclimate.com/github/Elena-Mikitenko/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d46d34541357cd4d8b8/maintainability" /></a>
 ### GitActions:
-![Actions Status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![Actions Status](https://github.com/github/docs/actions/workflows/my_linter.yml/badge.svg)
