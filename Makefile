@@ -16,6 +16,5 @@ package-install:
 brain-even:
 	poetry run brain-even
 
-
 make lint:
 	poetry run flake8 brain_games
