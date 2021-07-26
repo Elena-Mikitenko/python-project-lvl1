@@ -17,4 +17,9 @@ brain-even:
 	poetry run brain-even
 
 make lint:
+<<<<<<< Updated upstream
 	poetry run flake8 brain_games
+=======
+	poetry run flake8 braingames
+
+>>>>>>> Stashed changes
