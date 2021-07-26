@@ -18,4 +18,4 @@ brain-even:
 
 
 make lint:
-	poetry run flake8 braingames
+	poetry run flake8 brain_games
