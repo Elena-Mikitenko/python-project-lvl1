@@ -26,8 +26,8 @@ def main():
             print('Correct!')
             continue
         else:
-            print(("'" + answer + " ' is wrong answer ;(."
-                   "Correct answer was " + correct_answer + ".\nLet's "
+            print(("'" + answer + "' is wrong answer ;(."
+                   "Correct answer was '" + correct_answer + "'.\nLet's "
                    "try again, " + name + "!"))
             continue
     if count > 3 and answer == correct_answer:
