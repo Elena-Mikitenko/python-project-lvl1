@@ -1,15 +1,15 @@
-import prompt
+#!/usr/bin/env python
+
 from random import randint
+from brain_games.cli import welcome_user
 
 
 def main():
-    count = 1
-    print('Welcome to the Brain Games! ')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    name = welcome_user()
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
-
-
+    count = 1
+    answer = ''
+    correct_answer = ''
     while count <= 3:
         count += 1
         number = randint(0, 60)
@@ -21,15 +21,14 @@ def main():
         print('Question: ' + str(number))
         answer = input('Your answer: ')
 
-        if answer == 'yes' and number % 2 == 0 and count <= 3 or \
-           answer == 'no' and number % 2 == 1 and count <= 3:
+        if answer == 'yes' and number % 2 == 0 or\
+                answer == 'no' and number % 2 == 1:
             print('Correct!')
             continue
-        elif answer == 'yes' and number % 2 == 1 and count <= 3 or \
-             answer == 'no' and number % 2 == 0 and count <= 3:
-            print("'" + answer + " ' is wrong answer ;(. Correct answer was " + correct_answer + ".\nLet's try again, " + name + "!")
+        else:
+            print(("'" + answer + " ' is wrong answer ;(."
+                   "Correct answer was " + correct_answer + ".\nLet's "
+                   "try again, " + name + "!"))
             continue
-        elif count > 3 and answer == correct_answer:
-            print('Congratulations, ' + name + '!')
-        elif count > 3 and answer != correct_answer:
-            print("Let's try again, " + name + "!")
+    if count > 3 and answer == correct_answer:
+        print('Congratulations, ' + name + '!')
