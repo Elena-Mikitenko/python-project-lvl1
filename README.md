@@ -5,4 +5,4 @@
 ### GitActions:
 [![Actions Status](https://github.com/Elena-Mikitenko/python-project-lvl1/actions/workflows/my_linter.yml/badge.svg)](https://github.com/Elena-Mikitenko/python-project-lvl1/actions)
 ### Asciinema:
-<a href="https://asciinema.org/a/in57ct5HYxfff0RKxPoqIQnYI" target="_blank"><img src="https://asciinema.org/a/in57ct5HYxfff0RKxPoqIQnYI.svg" /></a>
+<script id="asciicast-in57ct5HYxfff0RKxPoqIQnYI" src="https://asciinema.org/a/in57ct5HYxfff0RKxPoqIQnYI.js" async></script>
