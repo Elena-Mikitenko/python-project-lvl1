@@ -28,6 +28,6 @@ def main():
             print(("'" + answer + "' is wrong answer ;(."
                    "Correct answer was '" + correct_answer + "'.\nLet's "
                    "try again, " + name + "!"))
-            continue
+            break
     if count > 3 and answer == correct_answer:
         print('Congratulations, ' + name + '!')

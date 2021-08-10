@@ -22,9 +22,11 @@ def game_gcd():
 
         if answer == str(divisor):
             print('Correct!')
+            continue
         else:
             print(("'" + str(answer) + "' is wrong answer ;(. "
                    "Correct answer was'" + str(divisor) + "'. \nLet's "
                    "try again, " + name + "!"))
+            break
     if count > 3 and answer == str(divisor):
         print('Congratulations, ' + name + '!')

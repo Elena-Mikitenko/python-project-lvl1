@@ -5,8 +5,8 @@
 ### GitActions:
 [![Actions Status](https://github.com/Elena-Mikitenko/python-project-lvl1/actions/workflows/my_linter.yml/badge.svg)](https://github.com/Elena-Mikitenko/python-project-lvl1/actions)
 ### Asciinema:
-<a href="https://asciinema.org/a/ErcosicyMz54uAByNhIA1w59j" target="_blank"><img src="https://asciinema.org/a/ErcosicyMz54uAByNhIA1w59j.svg" /></a>
-<a href="https://asciinema.org/a/tQlRpsaVWQAU9kpWL9WEE0crN" target="_blank"><img src="https://asciinema.org/a/tQlRpsaVWQAU9kpWL9WEE0crN.svg" /></a>
-<a href="https://asciinema.org/a/4C41bJzyRuh1O2ysFzr9qKMSr" target="_blank"><img src="https://asciinema.org/a/4C41bJzyRuh1O2ysFzr9qKMSr.svg" /></a>
-<a href="https://asciinema.org/a/YEtHL1Zzp6rNRPJ1TOe0BzBqQ" target="_blank"><img src="https://asciinema.org/a/YEtHL1Zzp6rNRPJ1TOe0BzBqQ.svg" /></a>
-<a href="https://asciinema.org/a/KakCGEXOpAooOkJNp8y0jzSUo" target="_blank"><img src="https://asciinema.org/a/KakCGEXOpAooOkJNp8y0jzSUo.svg" /></a>
+<a href="https://asciinema.org/a/yd665kVV2yEjAktI7TT3QZ0ky" target="_blank"><img src="https://asciinema.org/a/yd665kVV2yEjAktI7TT3QZ0ky.svg" /></a>
+<a href="https://asciinema.org/a/lchEs8j8gN2sLPPqbPOjZvQJa" target="_blank"><img src="https://asciinema.org/a/lchEs8j8gN2sLPPqbPOjZvQJa.svg" /></a>
+<a href="https://asciinema.org/a/XhTAPRbuIlZ3IvbwLGQWQWcfZ" target="_blank"><img src="https://asciinema.org/a/XhTAPRbuIlZ3IvbwLGQWQWcfZ.svg" /></a>
+<a href="https://asciinema.org/a/9Xzh6UKUlyjsXOkZE8ILvJvcK" target="_blank"><img src="https://asciinema.org/a/9Xzh6UKUlyjsXOkZE8ILvJvcK.svg" /></a>
+<a href="https://asciinema.org/a/ltEimgkUfPXfGB2ydy6DJoJMD" target="_blank"><img src="https://asciinema.org/a/ltEimgkUfPXfGB2ydy6DJoJMD.svg" /></a>
