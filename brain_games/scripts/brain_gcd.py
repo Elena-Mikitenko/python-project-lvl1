@@ -2,7 +2,7 @@
 
 import random
 from brain_games.cli import welcome_user
-from math import gcd
+import math
 
 
 def game_gcd():
@@ -18,7 +18,7 @@ def game_gcd():
         given_numbers = str(number1) + ' ' + str(number2)
         print('Question: ' + str(given_numbers))
         answer = input('Your answer: ')
-        divisor = gcd(number1, number2)
+        divisor = math.gcd(number1, number2)
 
         if answer == str(divisor):
             print('Correct!')
