@@ -1,4 +1,4 @@
-import random
+from random import randint
 import prompt
 from brain_games.cli import welcome_user
 
@@ -8,9 +8,9 @@ def game_progression():
     print('What number is missing in the progression? ')
 
     for count in range(0, 3):
-        step = random.randint(1, 20)
-        beg = random.randint(1, 20)
-        number = random.randint(0, 9)
+        step = randint(1, 20)
+        beg = randint(1, 20)
+        number = randint(0, 9)
         num_line = [count for count in range(beg, beg + ((step * 9) + 1), step)]
         which_number = num_line[number]
         num_line[number] = '..'
