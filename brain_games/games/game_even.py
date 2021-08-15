@@ -2,7 +2,7 @@
 
 from random import randint
 
-games_purpose = "Answer 'yes if number is even, otherwise answer 'no'."
+games_purpose = 'Answer "yes" if number is even, otherwise answer "no".'
 
 
 def game_even(numbers_question):

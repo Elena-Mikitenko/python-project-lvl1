@@ -4,7 +4,7 @@ import prompt
 
 
 def greeting():
-    print('Welcome to the Brain games!')
+    print('Welcome to the Brain Games!')
     gamer_name = prompt.string('May I have your name? ')
     print('Hello, {0}! '.format(gamer_name))
     return gamer_name
@@ -33,5 +33,5 @@ def run_engine(some_game):
                    f".\nLet's try again, {gamer_name}!"))
             break
 
-    if count > 3 and answer == correct_answer:
+    if count > quantity_of_counts and answer == correct_answer:
         print(f'Congratulations, {gamer_name}!')
