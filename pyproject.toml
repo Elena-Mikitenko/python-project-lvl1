@@ -12,7 +12,7 @@ python = "^3.8"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main_brain_even"
 brain-calc = "brain_games.scripts.brain_calc:main_brain_calc"
 brain-gcd = "brain_games.scripts.brain_gcd:main_brain_gcd"
