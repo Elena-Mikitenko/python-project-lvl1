@@ -1,33 +1,12 @@
-import random
-from brain_games.cli import welcome_user
-from operator import add, sub, mul
+#!/usr/bin/env python
+
+from brain_games import engine
+from brain_games.games import game_calc
 
 
-def game_calc():
-    name = welcome_user()
-    print('What is the result of the expression?')
-    count = 1
-    answer = ''
-    expression = ''
-    random_sign = {' + ': add, ' - ': sub, ' * ': mul}
+def main_brain_calc():
+    engine.run_engine(game_calc)
 
-    while count <= 3:
-        count += 1
-        sign = list(random_sign.keys())
-        number1, number2 = (random.randint(1, 100), random.randint(1, 100))
-        my_char = random.choice(sign)
-        expression = random_sign[my_char](number1, number2)
 
-        print('Question: ' + str(number1) + str(my_char) + str(number2))
-        answer = input('Your answer: ')
-
-        if answer == str(expression):
-            print('Correct!')
-            continue
-        else:
-            print(("'" + str(answer) + "' is wrong answer ;(. "
-                   "Correct answer was '" + str(expression) + "'.\nLet's "
-                   "try again, " + name + "!"))
-            break
-    if count > 3 and answer == str(expression):
-        print('Congratulations, ' + name + '!')
+if __name__ == '__main__':
+    main_brain_calc()

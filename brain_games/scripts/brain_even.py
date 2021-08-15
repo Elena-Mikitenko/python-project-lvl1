@@ -1,33 +1,12 @@
 #!/usr/bin/env python
 
-from random import randint
-from brain_games.cli import welcome_user
+from brain_games import engine
+from brain_games.games import game_even
 
 
-def main():
-    name = welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
-    count = 1
-    answer = ''
-    correct_answer = ''
-    while count <= 3:
-        count += 1
-        number = randint(0, 60)
+def main_brain_even():
+    engine.run_engine(game_even)
 
-        if number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-        print('Question: ' + str(number))
-        answer = input('Your answer: ')
 
-        if answer == correct_answer:
-            print('Correct!')
-            continue
-        else:
-            print(("'" + answer + "' is wrong answer ;(."
-                   "Correct answer was '" + correct_answer + "'.\nLet's "
-                   "try again, " + name + "!"))
-            break
-    if count > 3 and answer == correct_answer:
-        print('Congratulations, ' + name + '!')
+if __name__ == '__main__':
+    main_brain_even()
