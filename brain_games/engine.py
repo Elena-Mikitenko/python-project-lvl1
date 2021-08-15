@@ -15,18 +15,22 @@ def run_engine(some_game):
     print(some_game.games_purpose)
     quantity_of_counts = 3
     count = 1
+    answer = ''
+    correct_answer = ''
 
     while count <= quantity_of_counts:
+        count += 1
         question, correct_answer = some_game.game_process()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
-        if answer != correct_answer:
+        if answer == correct_answer:
+            print('Correct!')
+            continue
+        else:
             print((f"'{answer}' is wrong answer ;(."
                    f"Correct answer was '{correct_answer}'"
                    f".\nLet's try again, {gamer_name}!"))
             break
-        print('Correct!')
-        count += 1
-    else:
+    if count > quantity_of_counts and answer == correct_answer:
         print(f'Congratulations, {gamer_name}!')
