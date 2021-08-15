@@ -17,5 +17,5 @@ def game_process():
     progression[indefinite_number] = '..'
     for i, _ in enumerate(progression):
         progression[i] = str(progression[i])
-    question = ', '.join(progression)
+    question = ' '.join(progression)
     return question, str(answer)
