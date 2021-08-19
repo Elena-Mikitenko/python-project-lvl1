@@ -1,13 +1,22 @@
 #!/usr/bin/env python
 
-import math
-from random import randint
+import random
 
-games_purpose = 'Find the greatest common divisor of given numbers.'
+GAMES_PURPOSE = 'Find the greatest common divisor of given numbers.'
+MIN_EDGE = 1
+MAX_EDGE = 100
 
 
-def game_process():
-    number1, number2 = randint(1, 100), randint(1, 100)
-    question = '{} {}'.format(number1, number2)
-    answer = str(math.gcd(number1, number2))
-    return question, answer
+def get_question_and_answer_for_game():
+    first_number = random.randint(MIN_EDGE, MAX_EDGE)
+    second_number = random.randint(MIN_EDGE, MAX_EDGE)
+    divisor = min(first_number, second_number)
+    while divisor > 0:
+        divisor = divisor - 1
+        if first_number % divisor == 0 and second_number % divisor == 0:
+            break
+
+
+    question = f'{first_number} {second_number}'
+    answer = divisor
+    return question, str(answer)

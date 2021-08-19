@@ -2,17 +2,18 @@
 
 from random import randint
 
-games_purpose = 'Answer "yes" if number is even, otherwise answer "no".'
+GAMES_PURPOSE = 'Answer "yes" if number is even, otherwise answer "no".'
+MIN_EDGE = 1
+MAX_EDGE = 100
 
-
-def game_even(numbers_question):
+def is_even(numbers_question):
     if numbers_question % 2 == 0:
-        return 'yes'
+        return True
     else:
-        return 'no'
+        return False
 
 
-def game_process():
-    question = randint(1, 100)
-    answer = game_even(question)
+def get_question_and_answer_for_game():
+    question = randint(MIN_EDGE, MAX_EDGE)
+    answer = 'yes' if is_even(question) else 'no'
     return question, answer

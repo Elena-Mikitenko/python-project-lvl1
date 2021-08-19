@@ -2,22 +2,24 @@
 
 from random import randint
 
-games_purpose = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAMES_PURPOSE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_EDGE = 1
+MAX_EDGE = 100
 
-
-def game_prime(numbers_question):
+def is_prime(numbers_question):
     first_prime_number = 2
+
     if numbers_question < first_prime_number:
-        return 'no'
-    divisor = 2
-    while divisor < numbers_question:
+        return False
+
+    for divisor in range(2, numbers_question - 1):
         if numbers_question % divisor == 0:
-            return 'no'
+            return False
         divisor += 1
-    return 'yes'
+    return True
 
 
-def game_process():
-    question = randint(1, 100)
-    answer = game_prime(question)
+def get_question_and_answer_for_game():
+    question = randint(MIN_EDGE, MAX_EDGE)
+    answer = 'yes' if is_prime(question) else 'no'
     return question, answer

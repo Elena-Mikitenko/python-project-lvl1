@@ -1,21 +1,22 @@
 #!/usr/bin/env python
 
-import random
-from itertools import count, islice
+from random import randint
 
-games_purpose = 'What number is missing in the progression?'
+GAMES_PURPOSE = 'What number is missing in the progression?'
 
 NUMBERS_IN_LINE = 10
+MIN_EDGE = 1
+MAX_EDGE = 100
+MIN_STEP_EDGE = 5
+MAX_STEP_EDGE = 30
 
 
-def game_process():
-    progression = list(islice(count(
-        start=random.randint(1, 100),
-        step=random.randint(1, 10)), NUMBERS_IN_LINE))
-    answer = random.choice(progression)
-    indefinite_number = progression.index(answer)
+def get_question_and_answer_for_game():
+    first_number = randint(MIN_EDGE, NUMBERS_IN_LINE)
+    progression_step = randint(MIN_STEP_EDGE, MAX_STEP_EDGE)
+    indefinite_number = randint(1, NUMBERS_IN_LINE - 1)
+    progression = [first_number + i * progression_step for i in range(NUMBERS_IN_LINE)]
+    answer = str(first_number + progression_step * indefinite_number)
     progression[indefinite_number] = '..'
-    for i, _ in enumerate(progression):
-        progression[i] = str(progression[i])
-    question = ' '.join(progression)
-    return question, str(answer)
+    question = ' '.join(map(str, progression))
+    return question, answer
