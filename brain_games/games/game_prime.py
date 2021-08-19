@@ -6,6 +6,7 @@ GAMES_PURPOSE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_EDGE = 1
 MAX_EDGE = 100
 
+
 def is_prime(numbers_question):
     first_prime_number = 2
 

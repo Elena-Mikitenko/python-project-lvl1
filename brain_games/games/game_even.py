@@ -6,6 +6,7 @@ GAMES_PURPOSE = 'Answer "yes" if number is even, otherwise answer "no".'
 MIN_EDGE = 1
 MAX_EDGE = 100
 
+
 def is_even(numbers_question):
     if numbers_question % 2 == 0:
         return True

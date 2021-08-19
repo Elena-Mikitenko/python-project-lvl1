@@ -16,7 +16,6 @@ def get_question_and_answer_for_game():
         if first_number % divisor == 0 and second_number % divisor == 0:
             break
 
-
     question = f'{first_number} {second_number}'
     answer = divisor
     return question, str(answer)
