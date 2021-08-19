@@ -12,9 +12,9 @@ def get_question_and_answer_for_game():
     second_number = random.randint(MIN_EDGE, MAX_EDGE)
     divisor = min(first_number, second_number)
     while divisor > 0:
-        divisor = divisor - 1
         if first_number % divisor == 0 and second_number % divisor == 0:
             break
+        divisor = divisor - 1
 
     question = f'{first_number} {second_number}'
     answer = divisor
