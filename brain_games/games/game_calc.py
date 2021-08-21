@@ -8,12 +8,11 @@ MIN_EDGE = 1
 MAX_EDGE = 100
 
 
-def get_question_and_answer_for_game():
+def get_question_and_answer():
     signs = {'+': add, '-': sub, '*': mul}
     number1 = random.randint(MIN_EDGE, MAX_EDGE)
     number2 = random.randint(MIN_EDGE, MAX_EDGE)
-    signs_set = list(signs.keys())
-    my_char = random.choice(signs_set)
-    question = '{} {} {}'.format(number1, my_char, number2)
-    answer = str(signs[my_char](number1, number2))
+    sign = random.choice(list(signs.keys()))
+    question = '{} {} {}'.format(number1, sign, number2)
+    answer = str(signs[sign](number1, number2))
     return question, answer

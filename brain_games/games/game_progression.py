@@ -11,7 +11,7 @@ MIN_STEP_EDGE = 5
 MAX_STEP_EDGE = 30
 
 
-def get_question_and_answer_for_game():
+def get_question_and_answer():
     first_number = randint(MIN_EDGE, NUMBERS_IN_LINE)
     progression_step = randint(MIN_STEP_EDGE, MAX_STEP_EDGE)
     indefinite_number = randint(1, NUMBERS_IN_LINE - 1)

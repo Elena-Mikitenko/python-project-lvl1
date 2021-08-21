@@ -15,7 +15,7 @@ def run_engine(game):
 
     while count <= QUANTITY_OF_ROUNDS:
         count += 1
-        question, correct_answer = game.get_question_and_answer_for_game()
+        question, correct_answer = game.get_question_and_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
@@ -27,8 +27,6 @@ def run_engine(game):
                    f"Correct answer was '{correct_answer}'"
                    f".\nLet's try again, {gamer_name}!"))
             break
-        else:
-            print('No Break')
 
-    if count > QUANTITY_OF_ROUNDS and answer == correct_answer:
+    else:
         print(f'Congratulations, {gamer_name}!')

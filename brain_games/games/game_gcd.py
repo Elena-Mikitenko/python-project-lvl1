@@ -7,15 +7,18 @@ MIN_EDGE = 1
 MAX_EDGE = 100
 
 
-def get_question_and_answer_for_game():
-    first_number = random.randint(MIN_EDGE, MAX_EDGE)
-    second_number = random.randint(MIN_EDGE, MAX_EDGE)
+def calculate_gcd(first_number, second_number):
     divisor = min(first_number, second_number)
     while divisor > 0:
         if first_number % divisor == 0 and second_number % divisor == 0:
             break
         divisor = divisor - 1
+    return divisor
 
+
+def get_question_and_answer():
+    first_number = random.randint(1, 100)
+    second_number = random.randint(1, 100)
     question = f'{first_number} {second_number}'
-    answer = divisor
+    answer = calculate_gcd(first_number, second_number)
     return question, str(answer)
